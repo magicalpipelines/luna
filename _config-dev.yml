@@ -1,0 +1,105 @@
+# Site settings
+title: Luna
+name: Luna
+email: mitchseymour@gmail.com
+description: Community KSQL Functions
+# baseurl: ""
+url: "https://mitchseymour.com"
+
+logo: /images/favicon.png
+timezone: America/New_York
+locale: en-us
+
+# Pagination
+paginate: 18
+paginate_path: "/:num/"
+
+# Build
+buildtype: develop
+limit_posts: 10
+
+# Assets using Jekyll Asset Pipeline
+assets:
+  source_maps: false # false on JEKYLL_ENV=production
+  destination: "/assets"
+  compression: false
+  gzip: false
+  defaults:
+    js: { integrity: false } # true on JEKYLL_ENV=production
+    css: { integrity: false } # true on JEKYLL_ENV=production
+    img: { integrity: false } # true on JEKYLL_ENV=production
+  caching:
+    path: ".jekyll-cache/assets"
+    type: file # Possible values: memory, file
+    enabled: false
+  # --
+  # Assets you wish to always have compiled.
+  #   This can also be combined with raw_precompile which
+  #   copies assets without running through the pipeline
+  #   making them ultra fast.
+  # --
+  precompile: []
+  raw_precompile: [
+    #
+  ]
+  # --
+  # baseurl: whether or not to append site.baseurl
+  # destination: the folder you store them in on the CDN.
+  # url: the CDN url (fqdn, or w/ identifier).
+  # --
+  cdn:
+    baseurl: false
+    destination: false
+    url: null
+  # --
+  # These are all default. No need to add them
+  #   Only use this if you have more.
+  # --
+  sources:
+    - assets/css
+    - assets/fonts
+    - assets/images
+    - assets/videos
+    - assets/javascript
+    - assets/video
+    - assets/image
+    - assets/img
+    - assets/js
+    - _assets/css
+    - _assets/fonts
+    - _assets/images
+    - _assets/videos
+    - _assets/javascript
+    - _assets/video
+    - _assets/image
+    - _assets/img
+    - _assets/js
+    - css
+    - fonts
+    - images
+    - videos
+    - javascript
+    - video
+    - image
+    - img
+    - js
+
+# Exclude in build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - bin
+  - node_modules
+  - index.js
+
+# Tag page
+tag_page_layout: tag_page
+tag_page_dir: tags
+tag_permalink_style: pretty
+
+# Gems
+plugins:
+  - jekyll-paginate
+  - jekyll-feed
+  - jekyll-assets
+  - jekyll-seo-tag

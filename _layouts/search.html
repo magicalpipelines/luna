@@ -1,0 +1,32 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body>
+    {% include header.html %}
+    <div class="content">
+    {{ content }}
+
+    <script>
+    	window.store = [
+    	{% for post in site.posts %} {
+				"name": {{post.name | jsonify}},
+				"author": {{post.author | jsonify}},
+				"image": {{ post.image | jsonify }},
+				"install_id": {{ post.install_id | jsonify }},
+				"link": {{ post.url | jsonify }},
+    		"type": {{ post.type | jsonify }},
+    		"tags": {{ post.tags | jsonify }}
+    	}
+    	{% unless forloop.last %}, {% endunless %}
+    	{% endfor %}]
+    </script>
+    </div>   
+    {% include footer.html %}
+
+  </body>
+</html>
+

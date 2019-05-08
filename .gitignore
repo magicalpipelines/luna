@@ -1,0 +1,7 @@
+node_modules
+_site
+.asset-cache
+.jekyll-cache
+purge.sh
+yarn-error.log
+.DS_Store

@@ -1,0 +1,30 @@
+{
+	"files.exclude": {
+		// "_site": true,
+		".asset-cache": true,
+		".jekyll-cache": true,
+		"node_modules": true,
+	},
+	"search.exclude": {
+		"_site": true,
+		".asset-cache": true,
+		".jekyll-cache": true,
+		"node_modules": true,
+	},
+	"prettier.singleQuote": true,
+	"prettier.semi": false,
+	"prettier.useTabs": true,
+	"terminal.integrated.fontSize": 14,
+	"[javascript]": {
+      "editor.formatOnSave": true,
+      "editor.formatOnPaste": true
+  	},
+	"[scss]": {
+      "editor.formatOnSave": true,
+      "editor.formatOnPaste": true,
+  	},
+  	"[css]": {
+      "editor.formatOnSave": true,
+      "editor.formatOnPaste": true
+  	}
+}

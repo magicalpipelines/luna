@@ -1,0 +1,30 @@
+---
+layout: default
+title: Luna KSQL
+---
+
+<div class="container">
+	<div class="columns">
+		{% for post in paginator.posts %}
+
+			<div class="column col-4 col-sm-12 col-md-6 mb2">
+
+					<a class="card-link" href="{{ post.url | prepend: site.baseurl }}">
+
+						<div class="cover">
+							<img class="img-responsive"
+							src="{{post.image}}"
+							alt="{{post.title}}" />
+						</div>
+						<div class="card-header">
+							<h4 class="card-title">{{post.name}}</h4>
+							<h6 class="card-meta">{{post.author}}</h6>
+						</div>
+					</a>
+
+			</div>
+
+
+		{% endfor %}
+	</div>
+</div>

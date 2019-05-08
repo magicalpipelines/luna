@@ -1,0 +1,54 @@
+.form-input {
+    &::placeholder {
+        color: rgba(255,255,255,0.7);
+    }
+}
+
+.form-input {
+    transition: all .2s ease;
+    appearance: none;
+    background: rgba(255,0,128, 0.8);
+    border: .05rem solid rgba(0,0,0,.3);
+    border-radius: .1rem;
+    color: #FFF;
+    font-size: 2rem;
+    height: 4rem;
+    max-width: 100%;
+    padding: .35rem .9rem;
+    width: 100%;
+}
+
+.icon-search {
+    display: block;
+    width: 69px;
+    height: 69px;
+}
+
+.icon-search-svg {
+    fill: white;
+    width: 69px;
+    height: 69px;
+    display: inline-block;
+}
+
+.form-icon {
+    opacity: 0;
+}
+
+.albumcontainer {
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.albumcontainer .column {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 100%;
+
+    @media (min-width: 40em) {
+        flex-basis: 33.33333%;
+    }
+}

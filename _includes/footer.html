@@ -1,0 +1,47 @@
+<footer class="footer" role="contentinfo">
+	<div class="container py4">
+		<div class="columns">
+			<div class="column xs-col-12 col-md-6">
+					<p>
+						<a class="btn btn-link" href="https://github.com/magicalpipelines">Magical Pipelines</a>
+						<a class="btn btn-link" href="{{ site.baseurl }}/archive/">{{ site.posts | size }} KSQL functions and counting</a>
+					</p>
+			</div>
+			<div class="column xs-col-12 col-md-6" style="margin-left: auto;">
+
+
+			<div class="text-right">
+				<div class="text-right">
+
+					<div class="btn-group">
+						{% if paginator.previous_page %}
+						<a class="btn" href="{{ paginator.previous_page_path }}">Previous</a>
+						{% endif %}
+						{% if paginator.next_page %}
+						<a class="btn" href="{{ paginator.next_page_path }}">Next</a>
+						{% endif %}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+{% if site.buildtype == "production" %}
+{% asset app %}
+{% else %}
+<script async src="{{site.baseurl }}/assets/js/app.js"></script>
+{% endif %}
+
+<script>
+	/*
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-5407647-26', 'auto');
+  ga('send', 'pageview');
+
+  */
+</script>

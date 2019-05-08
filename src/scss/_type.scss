@@ -1,0 +1,37 @@
+h1 {
+    font-size: 1.5rem;
+    line-height: 1.25;
+    margin-top: 1rem;
+
+    @media (min-width: 40em) {
+        font-size: 1.75rem;
+        margin-top: 0;
+    }
+}
+
+h2,
+h3,
+h4,
+ul,
+li,
+p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}

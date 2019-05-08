@@ -1,0 +1,23 @@
+// Example of project-name.scss
+// Define variables to override default ones
+$primary-color: #fff;
+// $dark-color: darken(#87A421, 25%);
+
+// Import full Spectre source code
+@import '../../node_modules/spectre.css/src/spectre';
+
+@import 'type';
+@import 'base';
+@import 'images';
+@import 'basscss-utilities';
+@import 'post';
+@import 'footer';
+@import 'search';
+
+.card {
+	border: none;
+}
+
+.card-header {
+	padding: 1rem;
+}

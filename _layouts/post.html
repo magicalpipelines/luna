@@ -1,0 +1,72 @@
+---
+layout: default
+---
+
+<div class="container">
+	<div class="columns">
+		<div class="column col-4 col-sm-12 col-md-6">
+
+				<div class="cover">
+
+						<a class="card-link">
+
+								<div class="cover">
+									<img class="img-responsive"
+									src="{{page.image}}"
+									alt="{{page.title}}" />
+								</div>
+								<div class="card-header">
+									<h4 class="card-title">{{page.name}}</h4>
+									<h6 class="card-meta">{{page.author}}</h6>
+								</div>
+							</a>
+				</div>
+				<br>
+				<div class="mt2">
+					<pre>luna install {{ page.install_id }}</pre>
+				</div>
+
+		</div>
+
+		<div class="column col-6 col-sm-12 col-md-6 col-ml-auto">
+
+			<h1>{{page.name}}</h1>
+			{{ content }}
+
+			<br>
+			<!-- GitHub -->
+			<div class="mt2">
+				<p>Source</p>
+				<a class="btn btn-lg" href="{{ page.source_control }}" target="_blank">
+					GitHub
+				</a>
+			</div>
+
+			<!-- Tags -->
+			<div class="mt2">
+				<p>Tags</p>
+				{% for tag in page.tags limit:10 %}
+				<a class="btn" href="{{site.baseurl}}/tags/{{ tag }}">{{ tag }}</a> {% endfor
+				%}
+			</div>
+			<br>
+
+			<!-- Versions-->
+			<div class="mt2">
+				<p>Versions</p>
+				{% if page.versions %} {% for v in page.versions %}
+				<a class="btn" href="{{ v.link }}" target="_blank" style="margin-bottom:5px;">{{ v.name  }} </a><br>
+				{% endfor %} {% endif %}
+
+			</div>
+
+			{% if page.url contains "tags" %}
+			<div class="text-right">
+				<p>Functions with tag: {{ page.tag }}</p>
+			</div>
+			{% endif %}
+
+
+		</div>
+	</div>
+</div>

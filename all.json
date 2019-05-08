@@ -1,0 +1,21 @@
+---
+layout: none
+---
+{
+	"items": [
+		{% for post in site.posts %}
+		{
+			"name": "{{ post.name }}",
+			"author": "{{ post.author }}",
+			"permalink": "{{ post.permalink }}",
+			"install_id": "{{ post.install_id }}",
+			"source_control_link": "{{ post.source_control_link }}",
+			"source_control_type": "{{ post.source_control_type }}",
+			"type": "{{ post.type }}",
+			"tags": {{ post.tags | jsonify }},
+			"versions": {{ post.versions | jsonify }},
+			"default_version": "{{ post.default_version }}"
+		}
+		{% endfor %}
+	]
+}
