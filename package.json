@@ -1,9 +1,9 @@
 {
-	"name": "jazztips",
-	"version": "2.0.0",
-	"description": "Good music tips",
+	"name": "luna",
+	"version": "0.1.0",
+	"description": "Communit KSQL",
 	"main": "index.js",
-	"author": "Urban Sanden",
+	"author": "Mitch Seymour",
 	"license": "MIT",
 	"scripts": {
 		"start": "gulp",
