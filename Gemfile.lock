@@ -82,7 +82,7 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll
-  jekyll-assets (~> 2.3.2)
+  jekyll-assets
   jekyll-feed
   jekyll-paginate
   jekyll-seo-tag
