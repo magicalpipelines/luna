@@ -13,6 +13,6 @@ Jekyll build
 -------------------------------------------------------------------*/
 gulp.task("jekyll-build", function (done) {
 	 browserSync.notify(messages.jekyllBuild);
-    return cp.spawn("bundle", ["exec", "jekyll", "build", "--config", config.html.base+"_config-dev.yml"], {stdio: "inherit"})
+    return cp.spawn("bundle", ["exec", "jekyll", "build", "--config", config.html.base+"_config-dev.yml", "--trace"], {stdio: "inherit"})
     .on("close", done);
 });
