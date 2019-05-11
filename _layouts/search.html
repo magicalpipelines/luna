@@ -12,14 +12,14 @@ layout: compress
 
     <script>
     	window.store = [
-    	{% for post in site.posts %} {
-				"name": {{post.name | jsonify}},
-				"author": {{post.author | jsonify}},
-				"image": {{ post.image | jsonify }},
-				"install_id": {{ post.install_id | jsonify }},
-				"link": {{ post.url | jsonify }},
-    		"type": {{ post.type | jsonify }},
-    		"tags": {{ post.tags | jsonify }}
+    	{% for item in site.ksql_functions %} {
+				"name": {{item.name | jsonify}},
+				"author": {{item.author | jsonify}},
+				"image": {{ item.image | jsonify }},
+				"install_id": {{ item.install_id | jsonify }},
+				"link": {{ item.url | jsonify }},
+    		"type": {{ item.type | jsonify }},
+    		"tags": {{ item.tags | jsonify }}
     	}
     	{% unless forloop.last %}, {% endunless %}
     	{% endfor %}]

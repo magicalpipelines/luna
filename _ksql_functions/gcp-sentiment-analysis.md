@@ -15,8 +15,10 @@ source_control_type: github
 default_version: "v0.2.0"
 type: "udf"
 versions:
-- { name: "v0.2.0", link: "https://search.maven.org/artifact/com.mitchseymour/ksql-udf-sentiment-analysis/0.2.0/jar"}
-- { name: "v0.1.0", link: "https://search.maven.org/artifact/com.mitchseymour/ksql-udf-sentiment-analysis/0.1.0/jar"}
+    "0.2.0":
+        link: "https://search.maven.org/artifact/com.mitchseymour/ksql-udf-sentiment-analysis/0.2.0/jar"
+    "0.1.0":
+        link: "https://search.maven.org/artifact/com.mitchseymour/ksql-udf-sentiment-analysis/0.1.0/jar"
 
 ---
 

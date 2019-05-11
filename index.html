@@ -5,20 +5,20 @@ title: Luna KSQL
 
 <div class="container">
 	<div class="columns">
-		{% for post in paginator.posts %}
+		{% for item in site.ksql_functions %}
 
 			<div class="column col-4 col-sm-12 col-md-6 mb2">
 
-					<a class="card-link" href="{{ post.url | prepend: site.baseurl }}">
+					<a class="card-link" href="{{ item.url | prepend: site.baseurl }}">
 
 						<div class="cover">
 							<img class="img-responsive"
-							src="{{post.image}}"
-							alt="{{post.title}}" />
+							src="{{item.image}}"
+							alt="{{item.title}}" />
 						</div>
 						<div class="card-header">
-							<h4 class="card-title">{{post.name}}</h4>
-							<h6 class="card-meta">{{post.author}}</h6>
+							<h4 class="card-title">{{item.name}}</h4>
+							<h6 class="card-meta">{{item.author}}</h6>
 						</div>
 					</a>
 

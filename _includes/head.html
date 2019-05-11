@@ -45,18 +45,6 @@
   <meta property="og:site_name" content="{{ site.name }}">
   <meta property="og:locale" content="{{ site.locale }}">
 
-  {% if site.facebook %}
-    {% if site.facebook.admins %}
-      <meta property="fb:admins" content="{{ site.facebook.admins }}">
-    {% endif %}
-    {% if site.facebook.publisher %}
-      <meta property="article:publisher" content="{{ site.facebook.publisher }}">
-    {% endif %}
-    {% if site.facebook.app_id %}
-      <meta property="fb:app_id" content="{{ site.facebook.app_id }}">
-    {% endif %}
-  {% endif %}
-
   {% if page.date %}
     <meta property="article:author" content="https://www.facebook.com/{{ site.author.facebook }}">
     <meta property="article:modified_time" content="{% if page.last_modified_at %}{{ page.last_modified_at | date_to_xmlschema }}{% else %}{{ page.date | date_to_xmlschema }}{% endif %}">
@@ -77,15 +65,6 @@
     <meta property="article:tag" content="{{ tag }}">
     {% endfor %}
   {% endif %}
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:site" content="@{{ site.twitter.username }}">
-  {% if page.date %}
-    <meta name="twitter:creator" content="@{{ site.author.twitter }}">
-  {% endif %}
-  <meta name="twitter:title" content="{% if page.title %}{{ page.title | strip_html | strip_newlines | escape_once }}{% else %}{{ site.name }}{% endif %}">
-  <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | markdownify | strip_html | strip_newlines | truncate: 160 | escape_once }}{% else %}{{ site.description }}{% endif %}">
-  <meta name="twitter:image" content="{% if page.image %}{{ page.image }}{% else %}{{ site.logo | prepend: site.baseurl | prepend: site.url }}{% endif %}">
-  <meta name="twitter:url" content="{{ page.url | replace:'/index.html','/' | prepend: site.baseurl | prepend: site.url }}">
 
 
 </head>

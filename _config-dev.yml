@@ -16,7 +16,12 @@ paginate_path: "/:num/"
 
 # Build
 buildtype: develop
-limit_posts: 10
+limit_posts: 100
+
+collections:
+  ksql_functions:
+    output: true
+    permalink: /:name
 
 # Assets using Jekyll Asset Pipeline
 assets:

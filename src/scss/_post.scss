@@ -16,7 +16,7 @@
 
 .cover img {
     object-position: top center;
-    object-fit: cover;
+    object-fit: contain;
     width: 100%;
 }
 
@@ -73,7 +73,16 @@
     color: #fff;
     background-color: rgba(0,0,0,.4);
     border-radius: 10px;
+    height: 380px;
     padding: 1rem;
+}
+
+.card-link .cover {
+    height: 220px;
+}
+
+.card-link img  {
+    max-height: 100% !important;
 }
 
 .card-header {

@@ -2,20 +2,20 @@
 layout: none
 ---
 {
-	"items": [
-		{% for post in site.posts %}
+	"ksql_functions": [
+		{% for item in site.ksql_functions %}
 		{
-			"name": "{{ post.name }}",
-			"author": "{{ post.author }}",
-			"permalink": "{{ post.permalink }}",
-			"install_id": "{{ post.install_id }}",
-			"source_control_link": "{{ post.source_control_link }}",
-			"source_control_type": "{{ post.source_control_type }}",
-			"type": "{{ post.type }}",
-			"tags": {{ post.tags | jsonify }},
-			"versions": {{ post.versions | jsonify }},
-			"default_version": "{{ post.default_version }}"
-		}
+			"name": "{{ item.name }}",
+			"author": "{{ item.author }}",
+			"permalink": "{{ item.permalink }}",
+			"install_id": "{{ item.install_id }}",
+			"source_control_link": "{{ item.source_control_link }}",
+			"source_control_type": "{{ item.source_control_type }}",
+			"type": "{{ item.type }}",
+			"tags": {{ item.tags | jsonify }},
+			"versions": {{ item.versions | jsonify }},
+			"default_version": "{{ item.default_version }}"
+		}{% if forloop.last == false %},{% endif %}
 		{% endfor %}
 	]
 }

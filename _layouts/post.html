@@ -37,7 +37,7 @@ layout: default
 			<!-- GitHub -->
 			<div class="mt2">
 				<p>Source</p>
-				<a class="btn btn-lg" href="{{ page.source_control }}" target="_blank">
+				<a class="btn btn-lg" href="{{ page.source_control_link }}" target="_blank">
 					GitHub
 				</a>
 			</div>
@@ -55,7 +55,7 @@ layout: default
 			<div class="mt2">
 				<p>Versions</p>
 				{% if page.versions %} {% for v in page.versions %}
-				<a class="btn" href="{{ v.link }}" target="_blank" style="margin-bottom:5px;">{{ v.name  }} </a><br>
+				<a class="btn" href="{{ v[1].link }}" target="_blank" style="margin-bottom:5px;">{{ v[0]  }} </a><br>
 				{% endfor %} {% endif %}
 
 			</div>

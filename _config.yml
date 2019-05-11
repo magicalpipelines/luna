@@ -27,6 +27,11 @@ exclude:
   - index.js
   - src
 
+collections:
+  ksql_functions:
+    output: true
+    permalink: /:name
+
 # Assets using Jekyll Asset Pipeline
 assets:
   digest: true
