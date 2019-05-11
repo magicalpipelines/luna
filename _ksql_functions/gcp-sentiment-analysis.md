@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: ksql_function
 name: Sentiment Analysis
 author: Mitch Seymour
 tags:
@@ -12,7 +12,7 @@ permalink: /gcp-sentiment-analysis/
 install_id: gcp-sentiment-analysis
 source_control_link: "https://github.com/magicalpipelines/ksql-functions/tree/master/udf/sentiment-analysis"
 source_control_type: github
-default_version: "v0.2.0"
+default_version: "0.2.0"
 type: "udf"
 versions:
     "0.2.0":

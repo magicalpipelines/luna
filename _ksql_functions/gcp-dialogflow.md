@@ -1,18 +1,18 @@
 ---
-layout: post
+layout: ksql_function
 name: Dialogflow
 author: Mitch Seymour
 tags:
     - gcp
     - dialogflow
-    - chat
+    - chatbots
     - udf
 image: https://blog.mitchseymour.com/presentations/kafka-summit-london-2019/slides/images/dialogflow.png
 permalink: /gcp-dialogflow/
 install_id: gcp-dialogflow
 source_control_link: https://github.com/magicalpipelines/ksql-functions/tree/master/udf/dialogflow
 source_control_type: github
-default_version: "v0.1.0"
+default_version: "0.1.0"
 type: "udf"
 versions:
     "0.1.0":
