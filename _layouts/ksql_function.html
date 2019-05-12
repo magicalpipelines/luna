@@ -46,7 +46,7 @@ layout: default
 			<div class="mt2">
 				<p>Tags</p>
 				{% for tag in page.tags limit:10 %}
-				<a class="btn" href="{{site.baseurl}}/tags/{{ tag }}">{{ tag }}</a> {% endfor
+				<a class="btn" href="{{site.baseurl}}/luna/search/?s={{ tag }}">{{ tag }}</a> {% endfor
 				%}
 			</div>
 			<br>
