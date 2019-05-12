@@ -1,7 +1,7 @@
 import lunr from 'lunr'
 
 const searchfield = document.querySelector('.form-input')
-const resultdiv = document.querySelector('.albumcontainer')
+const resultdiv = document.querySelector('.functioncontainer')
 const searchcount = document.querySelector('.searchcount')
 let timeoutId
 
@@ -31,13 +31,6 @@ for (let key in window.store) {
 	})
 }
 
-const runServiceWorker = () => {
-	if ('serviceWorker' in navigator) {
-		window.addEventListener('load', function () {
-			navigator.serviceWorker.register('/serviceworker.js')
-		})
-	}
-}
 
 const getTerm = function () {
 	if (searchfield) {
@@ -114,6 +107,5 @@ const showResults = result => {
 	}, 300)
 }
 
-runServiceWorker()
 getTerm()
 getQuery()

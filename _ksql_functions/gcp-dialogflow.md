@@ -8,7 +8,7 @@ tags:
     - chatbots
     - udf
 image: https://blog.mitchseymour.com/presentations/kafka-summit-london-2019/slides/images/dialogflow.png
-permalink: /gcp-dialogflow/
+permalink: /luna/gcp-dialogflow/
 install_id: gcp-dialogflow
 source_control_link: https://github.com/magicalpipelines/ksql-functions/tree/master/udf/dialogflow
 source_control_type: github

@@ -8,7 +8,7 @@ tags:
     - nlp
     - udf
 image: https://blog.mitchseymour.com/presentations/kafka-summit-london-2019/slides/images/google-cloud-logo.png
-permalink: /gcp-sentiment-analysis/
+permalink: /luna/gcp-sentiment-analysis/
 install_id: gcp-sentiment-analysis
 source_control_link: "https://github.com/magicalpipelines/ksql-functions/tree/master/udf/sentiment-analysis"
 source_control_type: github

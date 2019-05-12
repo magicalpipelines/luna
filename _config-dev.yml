@@ -21,7 +21,7 @@ limit_posts: 100
 collections:
   ksql_functions:
     output: true
-    permalink: /:name
+    permalink: /luna/:name
 
 # Assets using Jekyll Asset Pipeline
 assets:
@@ -105,6 +105,7 @@ tag_permalink_style: pretty
 # Gems
 plugins:
   - jekyll-paginate
+  - jekyll-redirect-from
   - jekyll-feed
   - jekyll-assets
   - jekyll-seo-tag
