@@ -65,7 +65,7 @@ const updateUrlParameter = value => {
 const doSearch = query => {
 	const result = index.search(query)
 	resultdiv.innerHTML = ''
-	searchcount.innerHTML = `Found ${result.length} result`
+	searchcount.innerHTML = `Found ${result.length} ` + (result.length == 1 ? 'result' : 'results')
 
 	setTimeout(() => {
 		searchLoader.style.opacity = 0
