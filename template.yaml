@@ -1,0 +1,50 @@
+---
+layout: ksql_function
+
+# the author of the function
+author: Jane Smith
+
+# a human friendly name for your function
+name: My UDF
+
+# a unique id. this will be used by the upcoming luna CLI.
+# e.g. luna install my-udf /path/to/ksql/ext
+install_id: my-udf
+
+# permalink. should always be luna/<install_id>
+permalink: /luna/my-udf/
+
+# udf or udaf
+type: udf
+
+# tags that others can use to discover your function.
+# please limit to 10 tags
+tags:
+    - udf
+    - magical
+
+# an image to be displayed for your function
+image: ""
+
+# the link to your git repo
+source_control_link: https://github.com/some-user/some-repo
+
+# the type of git repo (e.g. github, bitbucket, etc)
+source_control_type: github
+
+# versions and JAR links
+versions:
+    0.1.0:
+        link: "https://search.maven.org/artifact/path/to/jar"
+
+# default version
+default_version: 0.1.0
+
+
+# a description of your function. feel free to use markup and html
+---
+This UDF is so magical.
+
+<pre>
+SELECT magic_function(col) FROM SOME STREAM ;
+</pre>
